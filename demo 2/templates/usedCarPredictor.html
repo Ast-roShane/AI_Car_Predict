@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<p>
+    In order to predict the price of your used car,
+    we will use the following features in our trained model predictor: </br></br>
+</p>
+
+<p>- The make year (a simple numeric value ranging from the year 1900 to 2022)</p>
+<p>- The manufacturer (an ordinal-encoded variable 0-40)</p>
+<p>- The current cafeteria occupancy (1 hour before predicted time)</p>
+<p>- The cafeteria occupancy at the same time from the previous day (24 hours before predicted time)</p>
+<p>- The cafeteria occupancy at the same time from the previous week (1 week before predicted time)</p>
+<p>- The cafeteria occupancy at the same time from the previous month (1 month before predicted time)</p>
+
+
+
+    <!-- Starts form section -->
+    <div class="form-container ">
+        <form class="form-horizontal" action = "/predict" method="post">
+
+            <div class="form-group row">
+              <label class="control-label col-sm-2" for="year">Make Year:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="year" name="year">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-2" for="manufacturer">Manufacturer:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="manufacturer" name="manufacturer">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-2" for="condition">Car Condition:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="condition" name="condition">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-2" for="cylinders">Number of Cylinders:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="cylinders" name="cylinders">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-2" for="fuel">Fuel Type:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="fuel" name="fuel">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-2" for="odometer">Mileage:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="odometer" name="odometer">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-2" for="transmission">Transmission Type:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="transmission" name="transmission">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-2" for="drive">Drivetrain:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="drive" name="drive">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-2" for="vehicle_type">Vehicle Type:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="vehicle_type" name="vehicle_type">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="control-label col-sm-2" for="paint_color">Paint Color:</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="paint_color" name="paint_color">
+              </div>
+            </div>
+
+            <div class="form-group row">
+            <label class="control-label col-sm-2" for="">&nbsp;</label>
+              <div class="col-sm-offset-2 col-sm-4">
+                <button type="submit" class="btn btn-primary">Predict</button>
+              </div>
+            </div>
+        </form>
+        <!-- Ends form section -->
+
+
+    </div>
+
+{% endblock %}

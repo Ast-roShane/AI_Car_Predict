@@ -1,0 +1,32 @@
+Quick guide on how to start up the flask app:
+
+Open a terminal where these files are located
+
+run the following:
+
+. venv/bin/activate
+
+export FLASK_ENV=development
+
+flask run
+
+
+What the commands do in order:
+
+Actiavates the python virtual environment (packaged in the venv folder)
+*Flask is already installed on it
+
+Tells the flask command to refresh the site upon code changes
+
+Starts up the flask app
+
+To shutdown the flask app:
+
+In the terminal screen:
+Press Ctrl+C (or Command+C) to force quit the flask app
+
+Then run:
+
+deactivate
+
+that deactivates the virtual environment. Start at the beginning of this guide to turn on the flask app again.
