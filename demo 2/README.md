@@ -4,6 +4,8 @@
 This Flask application is being used to implement a machine learning model made
 with Scikit Learn libraries to predict the price of a car given certain parameters about the car.
 
+
+![plot](/Users/astroshane/Documents/GIT_projects/AI_Car_Predict/demo 2/static/mercedes_PNG80135.png)
 <hr>
 
 ### Parameters
@@ -18,7 +20,6 @@ with Scikit Learn libraries to predict the price of a car given certain paramete
 9. Vehicle type
 10. Paint Color
 
-![plot](/Users/astroshane/Documents/School/AI_files/ai_website/demo/static/mercedes_PNG80135.png)
 <hr>
 
 ### Goal
@@ -44,9 +45,9 @@ Step 3: Install and run flask
 Step 4: Access the website and input data to make predictions.
 
 
-![plot](/Users/astroshane/Documents/School/AI_files/ai_website/demo/static/Screen Shot 2022-05-03 at 3.21.22 AM.jpeg)
+![plot](/Users/astroshane/Documents/GIT_projects/AI_Car_Predict/demo 2/static/Screen Shot 2022-05-03 at 3.21.22 AM.jpeg)
 
-![plot](/Users/astroshane/Documents/School/AI_files/ai_website/demo/static/Screen Shot 2022-05-03 at 3.21.32 AM.jpeg)
+![plot](/Users/astroshane/Documents/GIT_projects/AI_Car_Predict/demo 2/static/Screen Shot 2022-05-03 at 3.21.32 AM.jpeg)
 
 
 <hr>
