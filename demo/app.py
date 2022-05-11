@@ -18,21 +18,10 @@ def home():
 def projectwriteup():
     return render_template("project_writeup.html")
 
-@app.route('/alec')
-def alec():
-    return render_template("resume_alec.html")
-
 @app.route('/roshane')
 def roshane():
     return render_template("resume_shane.html")
 
-@app.route('/isaac')
-def isaac():
-    return render_template("resume_isaac.html")
-
-@app.route('/sean')
-def sean():
-    return render_template("resume_sean.html")
 
 #-------------------------------------------------------------------------------------#
 #--------------------------- ML Model Code -------------------------------------------#
